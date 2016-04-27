@@ -38,6 +38,53 @@
   </extension>
 </addon>
 
+<addon id="plugin.video.minas" name="LiveTV" version="1.0.0" provider-name="TV Direto">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4"/>
+    <import addon="script.module.requests"/>
+    <import addon="script.module.httplib2"/>
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube"/>
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">LIVE TV by TV Direto</summary>
+    <description lang="en">Remember who we are, and letâ€™s start a [COLOR red][R][/COLOR][COLOR white]Evolution[/COLOR]</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.specto" name="Specto - ... Fork"  version="2016.04.23.1" provider-name="mrknow" >
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="script.module.requests" version="1.0.0" />
+		<import addon="script.module.metahandler" />
+		<import addon="plugin.video.youtube" optional="true" />
+
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Mrknow fork of ...</summary>
+		<description lang="en">Mrknow fork of ..., support https://github.com/mrknow/filmkodi/issues.</description>
+		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.
+		</disclaimer>
+		<forum>https://github.com/mrknow/filmkodi/issues</forum>
+		<source>http://filmkodi.com/repository/</source>
+		<website>http://filmkodi.com/en/wtyczka-specto-fork-genesis/</website>
+		<platform>all</platform>
+	</extension>
+</addon>
+
 <addon
   id="plugin.video.SportsDevil"
   version="2016.04.20"

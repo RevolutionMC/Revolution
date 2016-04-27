@@ -77,7 +77,7 @@ mastercopy   =  ADDON.getSetting('mastercopy')
 
 #Root menu of addon
 def INDEX():
-	addDir('[COLOR red][B]Team[/B] ManiaC[/COLOR][COLOR white] Builds[/COLOR]',BASEURL,20,ART+'amoboxwiz.png',FANART,'')
+	addDir('[COLOR red][R][/COLOR][COLOR white]Evolution Builds[/COLOR]',BASEURL,20,ART+'amoboxwiz.png',FANART,'')
 	
 	addDir('[COLOR yellow]MAINTENANCE[/COLOR]',BASEURL,30,ART+'maintenance.png',FANART,'')
 	

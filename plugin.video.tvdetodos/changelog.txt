@@ -1,0 +1,14 @@
+Version 2.0.1
+Novo e Melhorado
+
+
+Version 2.0.0
+Bloqueado
+
+
+Version 1.0.0
+Bloqueado
+
+
+Version 0.0.1
+Primeiro Addon

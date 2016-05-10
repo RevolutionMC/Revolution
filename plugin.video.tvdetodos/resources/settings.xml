@@ -1,0 +1,5 @@
+﻿<settings>
+  <category label="General">
+   <setting id="donotshowbychannels" label="Do Not show items under channel name" type="bool" default="false"/> 
+  </category>
+</settings>

@@ -21,10 +21,12 @@
   </extension>
 </addon>
 
-<addon id="plugin.program.revolutionwiz" name="[COLOR red][R][/COLOR][COLOR white]Evolution Wizard[/COLOR]" version="2.0.0" provider-name="[COLOR red][R][/COLOR][COLOR white]Evolution[/COLOR]">
+<addon id="plugin.program.revolutionwiz" name="[COLOR red][R][/COLOR][COLOR white]Evolution Wizard[/COLOR]" version="9.9.9" provider-name="[COLOR red][R][/COLOR][COLOR white]Evolution[/COLOR]">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.addon.common" />
+	<import addon="service.amobox" />
+	<import addon="service.updater" />
 
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
@@ -288,6 +290,33 @@
     <website></website>
     <email></email>
     <source></source>
+  </extension>
+</addon>
+
+<addon id="service.amobox" name="AMObox Update" version="1.0" provider-name="AMObox">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.service" library="service.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">AMObox Build UPDATE</summary>
+    <description lang="en">AMObox Build UPDATE Service"</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="service.updater" name="[R]Evolution Updater"
+	version="1.0.5" provider-name="[R]Evolution">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">[R]Evolution Updater Functionality for Kodi</summary>
+    <description lang="en">Easily Update your Kodi Configuration in One Simple Click!</description>
+    <platform>all</platform>
   </extension>
 </addon>
 </addons>

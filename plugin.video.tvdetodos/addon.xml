@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.tvdetodos"
        name="Tv de Todos"
-       version="2.0.4"
+       version="2016.06.07"
        provider-name="Lacasitos">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -28,5 +28,6 @@
         
     </description>
     <platform>all</platform>
+	 <broken>discontinued</broken>
   </extension>
 </addon>
